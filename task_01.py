@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Task_01"""
+"""Time and Date"""
 
 
 import datetime
@@ -10,10 +10,17 @@ CURDATE = None
 
 
 def get_current_date():
-    """returning today's date from imported datetime"""
+    """This function produces current date.
+
+    Args:
+        None
+
+    Returns:
+        current local date.
+    """
     return datetime.date.today()
 
 
 if __name__ == '__main__':
-    print datetime.date.today()
     CURDATE = datetime.date.today()
+    print CURDATE
